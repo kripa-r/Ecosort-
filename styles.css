@@ -1,0 +1,78 @@
+:root {
+  --eco-green: #2ecc71;
+  --black: #000;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f4f4f4;
+}
+
+.view {
+  display: none;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.view.active {
+  display: block;
+}
+
+.sticker-card {
+  border: 4px solid black;
+  border-radius: 45px;
+  padding: 2rem;
+  box-shadow: 8px 8px 0px black;
+  background: white;
+}
+
+.center {
+  text-align: center;
+}
+
+button {
+  border: 4px solid black;
+  border-radius: 40px;
+  padding: 1rem 2rem;
+  background: var(--eco-green);
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 6px 6px 0px black;
+}
+
+.camera-view {
+  position: relative;
+  padding: 0;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fab {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 50%;
+  padding: 1rem;
+  font-size: 20px;
+}
+
+.bottom-sheet {
+  position: fixed;
+  bottom: -400px;
+  left: 0;
+  width: 100%;
+  background: white;
+  border-top: 4px solid black;
+  border-radius: 40px 40px 0 0;
+  padding: 2rem;
+  transition: bottom 0.4s ease;
+}
+
+.bottom-sheet.active {
+  bottom: 0;
+}
